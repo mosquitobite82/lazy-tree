@@ -1,0 +1,36 @@
+.tree {
+  ul {
+    padding: 0 0 0 1.5em;
+    margin: 0;
+    li {
+      list-style-type: none;
+      color: black;
+      text-align: left;
+      width: auto;
+      details {
+        summary::-webkit-details-marker {
+          display: none;
+        }
+        summary::marker {
+          display: none;
+        }
+        summary,
+        div,
+        section,
+        article,
+        span,
+        p,
+        a {
+          list-style-type: none;
+          border: thin solid gray;
+          border-radius: 1ch;
+          background-color: lightblue;
+          &:hover {
+            background-color: burlywood;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
